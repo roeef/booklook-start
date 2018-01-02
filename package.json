@@ -1,7 +1,6 @@
 {
   "name": "bookkeeper",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,14 @@
     "font-awesome": "^4.5.0",
     "handlebars": "^4.0.5",
     "jquery": "3.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roeef/booklook-start.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roeef/booklook-start/issues"
+  },
+  "homepage": "https://github.com/roeef/booklook-start#readme",
+  "description": ""
 }
