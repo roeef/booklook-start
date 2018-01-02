@@ -1,7 +1,7 @@
-var fetch = function () {
+var fetch = function (isbn) {
     $.ajax({
         method: "GET",
-        url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:0439023521',
+        url: `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`, //0439023521
         success: function(data) {
             let title = data.items[0].volumeInfo.title;
             let description = data.items[0].volumeInfo.description;
@@ -21,4 +21,4 @@ var fetch = function () {
     });
 };
 
-$(".search-book").click(fetch);
+$(".search-book").click(function(){fetch($('#isbn').val())} );
