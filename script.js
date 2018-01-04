@@ -13,7 +13,7 @@ var fetch = function (isbn, title) {
                 bookLookResultTemplate =
                     `<h1>${title}</h1>
                      <p>${description}</p>
-                     <h2>Wrriten by:${authors.join()}</h2>
+                     <h2>Wrriten by:${authors ? authors.join() : authors}</h2>
                      <img src="${thumbLink}">`
                 $('.book').append(bookLookResultTemplate)
             }
