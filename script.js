@@ -22,6 +22,10 @@ var fetch = function (isbn, title) {
             console.log(textStatus);
         }
     });
+
 };
 
-$(".search-book").click(function(){fetch($('#isbn').val(),$('#title').val())} );
+$("#form").submit(function(event){
+    fetch($('#isbn').val(),$('#title').val());
+    event.preventDefault();
+} );
